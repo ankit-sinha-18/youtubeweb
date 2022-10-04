@@ -4,6 +4,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 @Client.on_message(group=-1)
 async def CheckUserinChannel(c, m):
+    return True
     # channel User checker
     if not await inChannel(c, m):
         try:
